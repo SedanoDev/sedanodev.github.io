@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Luis Sedano</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Floating Navigation -->
+  <div class="floating-nav">
+    <button id="theme-toggle" class="icon-button">
+      <i class='bx bx-moon'></i>
+    </button>
+    <button id="menu-toggle" class="icon-button mobile-only">
+      <i class='bx bx-menu'></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="#inicio" class="mobile-nav-link">Inicio</a>
+      <a href="#sobre-mi" class="mobile-nav-link">Sobre Mí</a>
+      <a href="#experiencia" class="mobile-nav-link">Formación</a>
+      <a href="#proyectos" class="mobile-nav-link">Proyectos</a>
+      <a href="#contacto" class="mobile-nav-link">Contacto</a>
+    </nav>
+    <button id="close-menu" class="button">Cerrar</button>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <div class="desktop-nav-container">
+      <ul class="desktop-nav-list">
+        <li><a href="#inicio" class="desktop-nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="desktop-nav-link">Sobre Mí</a></li>
+        <li><a href="#experiencia" class="desktop-nav-link">Formación</a></li>
+        <li><a href="#proyectos" class="desktop-nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="desktop-nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="blur-circle top-right"></div>
+      <div class="blur-circle bottom-left"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge"></div>
+          <h1 class="hero-title">
+            <span>Hola, soy</span>
+            <span class="gradient-text">Luis Sedano</span>
+          </h1>
+          <p class="hero-description">
+            Técnico en Sistemas Microinformáticos y Redes con conocimientos en desarrollo web, administración de sistemas, y cloud computing.
+          </p>
+          <div class="button-group">
+            <a href="#contacto" class="button primary">
+              Contáctame <i class='bx bx-chevron-right'></i>
+            </a>
+            <a href="luis-sedano-cv.pdf" download="Luis-Sedano-CV.pdf" class="button outline">
+              Descargar CV <i class='bx bx-download'></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/SedanoDev" target="_blank" class="social-button">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="mailto:luis@example.com" class="social-button">
+              <i class='bx bx-envelope'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/luis-sedano/" target="_blank" class="social-button">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-image">
+            <img src="profile.png" alt="Luis Sedano">
+          </div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Estudiante en formación
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="badge secondary">Sobre Mí</div>
+          <h2 class="section-title">Conoce mi perfil</h2>
+          <p class="section-description">
+            Técnico en Sistemas Microinformáticos y Redes (SMR) con formación en Desarrollo de Aplicaciones Multiplataforma (DAM) y Administración de Sistemas Informáticos en Red (ASIR). Apasionado por la tecnología, domino lenguajes como JavaScript, TypeScript, y Java, frameworks como React.js y Vue.js, y herramientas de administración como Docker y AWS. Experiencia en montaje de hardware, redes (TCP/IP, Cisco), y bases de datos (MySQL, Oracle). Busco oportunidades para crecer en desarrollo, DevOps, y cloud computing.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3 class="subsection-title">Mi Trayectoria</h3>
+            <p>
+              Soy Luis Sedano, técnico en SMR desde 2023, donde adquirí habilidades en hardware, redes y sistemas. Actualmente curso ASIR, explorando administración avanzada y cloud computing, y he complementado mi formación con proyectos en desarrollo web y programación. Mi objetivo es fusionar mis conocimientos técnicos con soluciones innovadoras en software y sistemas.
+            </p>
+            <div class="button-container">
+              <a href="#experiencia" class="button outline">
+                Ver mi formación <i class='bx bx-chevron-right'></i>
+              </a>
+            </div>
+          </div>
+          <div class="skills-container">
+            <h3 class="subsection-title">Mis Habilidades</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class='bx bx-code-alt'></i>
+                </div>
+                <h4 class="skill-title">Programación</h4>
+                <ul class="skill-list">
+                  <li><span class="skill-dot"></span>JavaScript</li>
+                  <li><span class="skill-dot"></span>TypeScript</li>
+                  <li><span class="skill-dot"></span>Java</li>
+                  <li><span class="skill-dot"></span>MySQL</li>
+                </ul>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class='bx bx-globe'></i>
+                </div>
+                <h4 class="skill-title">Desarrollo Web</h4>
+                <ul class="skill-list">
+                  <li><span class="skill-dot"></span>HTML/CSS</li>
+                  <li><span class="skill-dot"></span>React.js</li>
+                  <li><span class="skill-dot"></span>Vue.js</li>
+                  <li><span class="skill-dot"></span>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class='bx bx-server'></i>
+                </div>
+                <h4 class="skill-title">Sistemas/Redes</h4>
+                <ul class="skill-list">
+                  <li><span class="skill-dot"></span>Windows Server</li>
+                  <li><span class="skill-dot"></span>Linux (Ubuntu)</li>
+                  <li><span class="skill-dot"></span>Docker</li>
+                  <li><span class="skill-dot"></span>TCP/IP, Cisco</li>
+                </ul>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class='bx bx-cloud'></i>
+                </div>
+                <h4 class="skill-title">Cloud/Hardware</h4>
+                <ul class="skill-list">
+                  <li><span class="skill-dot"></span>AWS, Azure</li>
+                  <li><span class="skill-dot"></span>Montaje PC</li>
+                  <li><span class="skill-dot"></span>RAID, UEFI</li>
+                  <li><span class="skill-dot"></span>Firewalls</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experiencia" class="section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="badge primary">Formación</div>
+          <h2 class="section-title">Mi formación académica</h2>
+          <p class="section-description">
+            Resumen de mis estudios y certificaciones en tecnología
+          </p>
+        </div>
+
+        <div class="tabs">
+          <div class="tabs-list">
+            <button class="tab-button active" data-tab="experiencia">Formación</button>
+            <button class="tab-button" data-tab="certificados">Certificados</button>
+          </div>
+          <div class="tab-content active" id="tab-experiencia">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024 - Actualidad</span>
+                  <h3 class="timeline-title">CFGS ASIR (1º Año)</h3>
+                  <p class="timeline-company">IES Calderón de la Barca</p>
+                  <p class="timeline-description">Administración de sistemas (Windows Server, Linux), redes (TCP/IP, Cisco), y cloud computing (AWS).</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023</span>
+                  <h3 class="timeline-title">CFGS DAM (1º Año)</h3>
+                  <p class="timeline-company">IES Villaverde</p>
+                  <p class="timeline-description">Programación (Java, JavaScript), desarrollo web (React.js, TypeScript), y bases de datos (MySQL).</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2020 - 2023</span>
+                  <h3 class="timeline-title">CFGM SMR</h3>
+                  <p class="timeline-company">IES Calderón de la Barca</p>
+                  <p class="timeline-description">Montaje de equipos, redes locales (DHCP, DNS), y sistemas (Windows, Linux).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab-certificados">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024</span>
+                  <h3 class="timeline-title">AWS Cloud Practitioner</h3>
+                  <p class="timeline-company">Amazon Web Services</p>
+                  <p class="timeline-description">Fundamentos de cloud computing en AWS.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023</span>
+                  <h3 class="timeline-title">Cisco CCNA (Introduction)</h3>
+                  <p class="timeline-company">Cisco Networking Academy</p>
+                  <p class="timeline-description">Redes TCP/IP, routing, y switching.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023</span>
+                  <h3 class="timeline-title">Cisco IT Essentials</h3>
+                  <p class="timeline-company">Cisco Networking Academy</p>
+                  <p class="timeline-description">Certificación en hardware y software.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="badge secondary">Proyectos</div>
+          <h2 class="section-title">Mis trabajos prácticos</h2>
+          <p class="section-description">
+            Proyectos realizados durante mi formación y autoaprendizaje
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/600x400" alt="Aplicación React.js">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Aplicación To-Do con React.js</h3>
+              <p class="project-description">Aplicación dinámica de lista de tareas usando React.js y Tailwind CSS.</p>
+              <div class="project-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link">Ver detalles</a>
+                <a href="https://github.com/SedanoDev/todo-app" target="_blank" class="project-external">
+                  <i class='bx bx-link-external'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/600x400" alt="Red Dockerizada">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Red Local Dockerizada</h3>
+              <p class="project-description">Configuración de una red local con contenedores Docker y DNS dinámico.</p>
+              <div class="project-tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Redes</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link">Ver detalles</a>
+                <a href="https://github.com/SedanoDev/docker-network" target="_blank" class="project-external">
+                  <i class='bx bx-link-external'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/600x400" alt="Diagnóstico Hardware">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Script de Diagnóstico Hardware</h3>
+              <p class="project-description">Script en JavaScript para analizar componentes (CPU, RAM) vía Node.js.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Hardware</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link">Ver detalles</a>
+                <a href="https://github.com/SedanoDev/hardware-diagnostic" target="_blank" class="project-external">
+                  <i class='bx bx-link-external'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="badge primary">Contacto</div>
+          <h2 class="section-title">¿Quieres colaborar?</h2>
+          <p class="section-description">
+            Estoy abierto a oportunidades de prácticas o proyectos básicos.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="subsection-title">Información de contacto</h3>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class='bx bx-envelope'></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value"><a href="mailto:luis@example.com">luis@example.com</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class='bx bxl-github'></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">GitHub</p>
+                  <p class="contact-value"><a href="https://github.com/SedanoDev">/SedanoDev</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">LinkedIn</p>
+                  <p class="contact-value"><a href="https://linkedin.com/in/luis-sedano">/in/luis-sedano</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <h3 class="subsection-title">Envíame un mensaje</h3>
+            <form action="https://formspree.io/f/xvgkojvo" method="POST" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="_replyto" class="form-input" placeholder="tu@email.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto del mensaje" required>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+              <button type="submit" class="button primary full-width">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">
+          © <span id="current-year"></span> Luis Sedano. Todos los derechos reservados.
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/SedanoDev" target="_blank" class="social-button">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="mailto:luis@example.com" class="social-button">
+            <i class='bx bx-envelope'></i>
+          </a>
+          <a href="https://www.linkedin.com/in/luis-sedano/" target="_blank" class="social-button">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
